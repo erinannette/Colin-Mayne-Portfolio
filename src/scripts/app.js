@@ -1,5 +1,6 @@
 // MAIN SECTIONS - ROLLOVERS
 (function () {
+
     function init() {
         var speed = 250,
             easing = mina.easeinout;
@@ -20,5 +21,7 @@
             });
         });
     }
-            init();
+
+    init();
+
 })();
