@@ -1,5 +1,7 @@
 $basefont1: 'Josefin Sans', sans-serif;
-$basefont2: 'Source Sans Pro', sans-serif;
+// $basefont2: 'Source Sans Pro', sans-serif;
+$basefont2: 'Raleway', sans-serif;
+// $basefont2: 'Hind Madurai', sans-serif;
 
 $bg-grey: #cac2c2;
 $bg-black: #131313;
@@ -11,15 +13,13 @@ $lt-green: #3c7e8a;
     font-size: ($sizeValue/10) * 1rem;
     font-family: $basefont1;
     text-transform: uppercase;
-    color: $dk-green;
 }
 @mixin paragraph-styles($sizeValue) {
     font-size: $sizeValue * 1px;
     font-size: ($sizeValue/10) * 1rem;
     font-family: $basefont2;
     font-weight: 300;
-    letter-spacing: 1px;
-    color: $bg-black;
+    letter-spacing: 1.5px;
 }
 html {
     font-size: 62.5%;
@@ -32,9 +32,44 @@ h1 {
     letter-spacing: 70px;
     line-height: 150px;
     text-align: center;
-    padding: 5%;
+    font-weight: 600;
 }
-h2 {
+.h2-on-black, .h3-on-black {
     @include title-styles (22);
+    color: white;
+    font-weight: 600;
+}
+.p-on-black {
+    @include paragraph-styles(16);
+    line-height: 25px;
+    color: white;
+}
+button {
+    @include title-styles (18);
+    color: white;
+    font-weight: 600;  
+    letter-spacing: 1px; 
+}
+.h2-on-grey, .h3-on-grey, .h4-on-white {
+    @include title-styles (22);
+    color: $dk-green;
+    font-weight: 600;
+}
+.p-on-grey {
+    @include paragraph-styles(16);
+    line-height: 25px;
     color: $lt-green;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px $bg-grey;
+}
+// FORM FONT STYLES
+.full-name, .email, .message {
+    @include paragraph-styles(15);
+    color: $lt-green;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px $bg-grey;
+}
+.submit {
+    @include title-styles(18);
+    color: $dk-green;
 }

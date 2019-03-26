@@ -1,0 +1,38 @@
+$bg-grey: #cac2c2;
+$bg-black: #131313;
+$dk-green: #223e44;
+$lt-green: #3c7e8a;
+
+// FOOTER
+footer {
+    width: 100%;
+    background-color: white;
+    .footer-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .left a, .right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+    h4 {
+        padding-top: 5px;
+    }
+    .fab {
+        font-size: 40px;
+        color: $dk-green;
+        padding-left: 10px;
+    }
+    .fas {
+        font-size: 25px;
+        color: $dk-green;
+        padding-right: 5px;
+    }
+}
