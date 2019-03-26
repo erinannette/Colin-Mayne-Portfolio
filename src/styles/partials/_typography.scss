@@ -30,7 +30,7 @@ body {
 h1 {
     @include title-styles (125);
     letter-spacing: 70px;
-    line-height: 150px;
+    // line-height: 150px;
     text-align: center;
     font-weight: 600;
 }
@@ -61,6 +61,12 @@ button {
     color: $lt-green;
     font-weight: 400;
     text-shadow: 1px 1px 1px $bg-grey;
+    span {
+        @include title-styles (18);
+        text-transform: lowercase;
+        color: $dk-green;
+        font-weight: 600;
+    }
 }
 // FORM FONT STYLES
 .full-name, .email, .message {
@@ -72,4 +78,24 @@ button {
 .submit {
     @include title-styles(18);
     color: $dk-green;
+}
+
+// RESPONSIVENESS
+@media (max-width: 900px) {
+    h1 {
+        @include title-styles (110);
+        letter-spacing: 70px;
+    }
+}
+@media (max-width: 650px) {
+    h1 {
+        @include title-styles (80);
+        letter-spacing: 40px;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        @include title-styles (50);
+        letter-spacing: 30px;
+    }
 }

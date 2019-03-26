@@ -162,7 +162,6 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 70px;
-  line-height: 150px;
   text-align: center;
   font-weight: 600; }
 
@@ -210,6 +209,14 @@ button {
   color: #3c7e8a;
   font-weight: 400;
   text-shadow: 1px 1px 1px #cac2c2; }
+  .p-on-grey span {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    color: #223e44;
+    font-weight: 600; }
 
 .full-name, .email, .message {
   font-size: 15px;
@@ -227,6 +234,30 @@ button {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   color: #223e44; }
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 110px;
+    font-size: 11rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 70px; } }
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 80px;
+    font-size: 8rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 40px; } }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    font-size: 5rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 30px; } }
 
 .nav {
   position: fixed;
@@ -468,7 +499,7 @@ form {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    form .form-top .form-row-1, form .form-top .form-row-2, form .form-top .form-row-3 {
+    form .form-top .form-row-1, form .form-top .form-row-2 {
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -482,7 +513,11 @@ form {
       justify-content: space-between;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+    form .form-top .form-row-3 {
+      margin: 0 auto; }
   form .full-name, form .email {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -514,6 +549,19 @@ form {
   form .full-name, form .email, form .message, form .submit {
     margin: 4px 0; }
 
+@media (max-width: 1080px) {
+  form {
+    width: 80%; } }
+
+@media (max-width: 650px) {
+  .contact-text {
+    text-align: center;
+    width: 90%; }
+  form {
+    width: 90%; }
+    form .full-name, form .email {
+      width: 100%; } }
+
 footer {
   width: 100%;
   background-color: white; }
@@ -533,7 +581,9 @@ footer {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     footer .footer-wrapper .left a, footer .footer-wrapper .right {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -555,7 +605,22 @@ footer {
   footer .fas {
     font-size: 25px;
     color: #223e44;
-    padding-right: 5px; }
+    padding-right: 12px; }
+
+@media (max-width: 600px) {
+  .footer-wrapper .left, .footer-wrapper .right {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .footer-wrapper .left {
+    padding: 2% 0 4% 0; }
+    .footer-wrapper .left a {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .footer-wrapper .right {
+    padding-bottom: 2%; } }
 
 * {
   margin: 0;
@@ -568,10 +633,24 @@ body {
   overflow-x: hidden; }
 
 /* ----- HEADER ----- */
-h1 {
-  color: #EEDDE0;
-  padding: 5% 2% 2% 2%;
-  text-shadow: 0 0 30px #63D7EC, 0 0 10px #A1D6E6, 0 0 100px #63D7EC, 0 0 500px #67E3F3, 5px 9px 5px #00000080; }
+.neon-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .neon-hero h1 {
+    color: #EEDDE0;
+    text-shadow: 0 0 30px #63D7EC, 0 0 10px #A1D6E6, 0 0 100px #010708, 0 0 500px #67E3F3; }
+  .neon-hero .h1-top {
+    padding: 10% 0 3% 0; }
+  .neon-hero .h1-bottom {
+    padding-bottom: 2%; }
 
 .section-portfolio {
   margin: 40px auto 120px;
@@ -616,7 +695,7 @@ h1 {
       margin: 0 0 20px 0;
       padding-top: 5px;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 1.5px;
       -webkit-transition: -webkit-transform 0.3s;
       transition: -webkit-transform 0.3s;
       -o-transition: transform 0.3s;
@@ -713,3 +792,29 @@ h1 {
     top: -83px;
     right: 0px;
     content: ""; }
+
+@media (max-width: 1080px) {
+  .h1-top {
+    padding: 10% 0 2% 0; }
+  .section-portfolio {
+    width: 80%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .section-portfolio a {
+      width: 48%;
+      margin-bottom: 3%; } }
+
+@media (max-width: 650px) {
+  .section-portfolio {
+    width: 80%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .section-portfolio a {
+      width: 98%;
+      margin-bottom: 3%; }
+      .section-portfolio a:hover figcaption h2 {
+        padding-top: 0; }
+      .section-portfolio a svg {
+        height: 70%; } }

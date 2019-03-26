@@ -15,6 +15,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .left a, .right {
             display: flex;
             flex-direction: row;
@@ -33,6 +34,25 @@ footer {
     .fas {
         font-size: 25px;
         color: $dk-green;
-        padding-right: 5px;
+        padding-right: 12px;
+    }
+}
+// RESPONSIVENESS
+@media (max-width: 600px) {
+    .footer-wrapper {
+        // justify-content: center;
+        .left, .right {
+            width: 100%;
+            justify-content: center;
+        }
+        .left {
+            padding: 2% 0 4% 0;
+            a {
+                justify-content: center;
+            }
+        }
+        .right {
+            padding-bottom: 2%;
+        }
     }
 }

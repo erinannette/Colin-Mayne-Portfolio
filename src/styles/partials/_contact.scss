@@ -31,15 +31,16 @@ form {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        .form-row-1, .form-row-2, .form-row-3 {
+        .form-row-1, .form-row-2 {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         .form-row-3 {
-            
+            margin: 0 auto;
         }
     }
     .full-name, .email {
@@ -74,5 +75,24 @@ form {
     }
     .full-name, .email, .message, .submit {
         margin: 4px 0;
+    }
+}
+
+// RESPONSIVENESS
+@media (max-width: 1080px) {
+    form {
+        width: 80%;
+    }
+}
+@media (max-width: 650px) {
+    .contact-text {
+        text-align: center;
+        width: 90%;
+    }
+    form {
+        width: 90%;
+        .full-name, .email {
+            width: 100%;
+        }
     }
 }

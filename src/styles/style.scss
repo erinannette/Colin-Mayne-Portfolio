@@ -20,14 +20,23 @@ body {
     overflow-x: hidden;
 }
 /* ----- HEADER ----- */
-h1 {
-    color: #EEDDE0;
-    padding: 5% 2% 2% 2%;
-    text-shadow: 0 0 30px #63D7EC,
-        0 0 10px #A1D6E6,
-        0 0 100px #63D7EC,
-        0 0 500px #67E3F3,
-        5px 9px 5px #00000080;
+.neon-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: #EEDDE0;
+        text-shadow: 0 0 30px #63D7EC,
+            0 0 10px #A1D6E6,
+            0 0 100px rgb(1, 7, 8),
+            0 0 500px #67E3F3,
+    }
+    .h1-top {
+        padding: 10% 0 3% 0;
+    }
+    .h1-bottom {
+        padding-bottom: 2%;
+    }
 }
 // ---- PORTFOLIO SECTION -----
 .section-portfolio {
@@ -69,8 +78,7 @@ h1 {
             margin: 0 0 20px 0;
             padding-top: 5px;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            // font-size: 130%;
+            letter-spacing: 1.5px;
             transition: transform 0.3s;
         }
         p {
@@ -167,5 +175,38 @@ h1 {
         top: -83px;
         right: 0px;
         content: "";
+    }
+}
+
+// RESPONSIVENESS
+@media (max-width: 1080px) {
+    .h1-top {
+        padding: 10% 0 2% 0;
+    }
+    .section-portfolio {
+        width: 80%;
+        justify-content: space-between;
+        a {
+            width: 48%;
+            margin-bottom: 3%;
+            // max-height: 200px;
+        }
+    }
+}
+@media (max-width: 650px) {
+    .section-portfolio {
+        width: 80%;
+        justify-content: space-between;
+        a {
+            width: 98%;
+            margin-bottom: 3%;
+            // max-height: 200px;
+            &:hover figcaption h2 {
+                padding-top: 0;
+            }
+            svg {
+                height: 70%;
+            }
+        }
     }
 }
