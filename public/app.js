@@ -1,27 +1,35 @@
-// MAIN SECTIONS - ROLLOVERS
-(function () {
+// Open the Modal
+function openModal() {
+    document.getElementById('myModal').style.display = "block";
+}
 
-    function init() {
-        const speed = 250,
-            easing = mina.easeinout;
+// Close the Modal
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
 
-        [].slice.call(document.querySelectorAll('#grid > a')).forEach(function (el) {
-            const s = Snap(el.querySelector('svg')), path = s.select('path'),
-                pathConfig = {
-                    from: path.attr('d'),
-                    to: el.getAttribute('data-path-hover')
-                };
+let slideIndex = 1;
+showSlides(slideIndex);
 
-            el.addEventListener('mouseenter', function () {
-                path.animate({ 'path': pathConfig.to }, speed, easing);
-            });
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-            el.addEventListener('mouseleave', function () {
-                path.animate({ 'path': pathConfig.from }, speed, easing);
-            });
-        });
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let captionText = document.getElementById("caption");
+    
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
-    init();
-
-})();
+    slides[slideIndex - 1].style.display = "block";
+}

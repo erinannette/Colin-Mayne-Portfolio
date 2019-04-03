@@ -165,6 +165,16 @@ h1 {
   text-align: center;
   font-weight: 600; }
 
+.h1-secondary {
+  font-size: 50px;
+  font-size: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+  font-weight: 600;
+  padding: 40px 0 16px 20px; }
+
 .h2-on-black, .h3-on-black {
   font-size: 22px;
   font-size: 2.2rem;
@@ -172,6 +182,11 @@ h1 {
   text-transform: uppercase;
   color: white;
   font-weight: 600; }
+
+.sub-head_title {
+  letter-spacing: 7px;
+  text-align: center;
+  padding-top: 5px; }
 
 .p-on-black {
   font-size: 16px;
@@ -562,6 +577,179 @@ form {
     form .full-name, form .email {
       width: 100%; } }
 
+.subpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .subpage .sub-head {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .subpage .sub-head .sub-head_container {
+      width: 100%; }
+      .subpage .sub-head .sub-head_container.outline {
+        border: 1px solid #3c7e8a;
+        margin: 15px 0;
+        padding: 15px 0; }
+
+.gallery {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .gallery .gallery-image {
+    max-width: 20%;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    height: 200px;
+    border-right: 0.5px solid #131313;
+    border-bottom: 0.5px solid #131313;
+    overflow: hidden;
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover; }
+    .gallery .gallery-image .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding-top: 25px;
+      background: rgba(34, 62, 68, 0.6);
+      opacity: 0;
+      -webkit-transition: .5s ease;
+      -o-transition: .5s ease;
+      transition: .5s ease; }
+  .gallery .gallery-image:hover .overlay {
+    cursor: pointer;
+    opacity: 1; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  /* The Close Button */
+  /* Modal Content */ }
+  .modal .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold; }
+    .modal .close:hover, .modal .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer; }
+  .modal .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    /* Hide the slides by default */
+    /* Next & previous buttons */
+    /* On hover, add a black background color with a little bit see-through */
+    /* Position the "next button" to the right */
+    /* Caption text */ }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .modal .modal-content .mySlides {
+      display: none; }
+      .modal .modal-content .mySlides .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0; }
+    .modal .modal-content .prev,
+    .modal .modal-content .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      -webkit-transition: 0.6s ease;
+      -o-transition: 0.6s ease;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-select: none; }
+    .modal .modal-content .prev:hover,
+    .modal .modal-content .next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+    .modal .modal-content .next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+    .modal .modal-content .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white; }
+
+img.demo {
+  opacity: 0.6; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
+
 footer {
   width: 100%;
   background-color: white; }
@@ -627,6 +815,7 @@ footer {
   padding: 0; }
 
 body {
+  max-width: 2400px;
   background-color: #131313;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -648,9 +837,9 @@ body {
     color: #EEDDE0;
     text-shadow: 0 0 30px #63D7EC, 0 0 10px #A1D6E6, 0 0 100px #010708, 0 0 500px #67E3F3; }
   .neon-hero .h1-top {
-    padding: 10% 0 3% 0; }
+    padding: 10% 0 3% 25px; }
   .neon-hero .h1-bottom {
-    padding-bottom: 2%; }
+    padding: 0 0 2% 25px; }
 
 .section-portfolio {
   margin: 40px auto 120px;
@@ -795,7 +984,7 @@ body {
 
 @media (max-width: 1080px) {
   .h1-top {
-    padding: 10% 0 2% 0; }
+    padding: 10% 0 2% 25px; }
   .section-portfolio {
     width: 80%;
     -webkit-box-pack: justify;
