@@ -652,7 +652,7 @@ form {
       -o-transition: .5s ease;
       transition: .5s ease; }
     .gallery .gallery-image img {
-      width: 160%;
+      width: 100%;
       display: block; }
   .gallery .gallery-image:hover .overlay {
     cursor: pointer;
