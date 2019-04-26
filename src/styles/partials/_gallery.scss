@@ -34,8 +34,8 @@
     justify-content: center;
     flex-wrap: wrap;
     .gallery-image {
-        max-width: 20%;
-        flex-basis: 20%;
+        max-width: 16.66%;
+        flex-basis: 16.66%;
         height: 200px;
         border-right: 0.5px solid $bg-black;
         border-bottom: 0.5px solid $bg-black;
@@ -53,6 +53,10 @@
             background: rgba(34,62,68,0.6);
             opacity: 0;
             transition: .5s ease;
+        }
+        img {
+            width: 160%;
+            display: block;
         }
     }
     .gallery-image:hover .overlay {
@@ -112,6 +116,11 @@
                 padding: 8px 12px;
                 position: absolute;
                 top: 0;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         /* Next & previous buttons */
