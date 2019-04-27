@@ -631,7 +631,6 @@ form {
     max-width: 16.66%;
     -ms-flex-preferred-size: 16.66%;
     flex-basis: 16.66%;
-    height: 200px;
     border-right: 0.5px solid #131313;
     border-bottom: 0.5px solid #131313;
     overflow: hidden;
