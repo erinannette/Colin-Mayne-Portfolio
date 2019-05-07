@@ -37,7 +37,6 @@ h1 {
 .h1-secondary {
     @include title-styles (50);
     letter-spacing: 20px;
-    // line-height: 150px;
     text-align: center;
     font-weight: 600;
     padding: 40px 0 16px 20px;
@@ -51,18 +50,19 @@ h1 {
     @include title-styles (20);
     color: white;
     font-weight: 600;
+    // color: #EEDDE0;
+        // text-shadow: 0 0 30px #63D7EC,
+        //     0 0 10px #A1D6E6,
+        //     0 0 100px rgb(1, 7, 8),
+        //     0 0 500px #67E3F3,
 }
 h4 {
-    @include title-styles(20);
-    color: $bg-black;
-    &:hover {
-        color: $lt-green;
-    }
+    @include paragraph-styles(15);
+    color: $lt-green;
+    letter-spacing: 3px;
 }
 .sub-head_section {
     padding: 2% 0;
-    color: white;
-    text-shadow: 2px 2px 5px $lt-green;
     letter-spacing: 7px;
     text-align: center;
 }
@@ -107,7 +107,7 @@ a {
 }
 i {
     @include title-styles(25);
-    color: $bg-grey;
+    color: $lt-green;
 }
 .numbertext {
     @include title-styles(18);

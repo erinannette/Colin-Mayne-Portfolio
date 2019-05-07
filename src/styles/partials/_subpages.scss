@@ -11,23 +11,25 @@
         .sub-head_container {
             width: 100%;
             &.outline {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 border: 1px solid $lt-green;
                 margin: 15px 0;
                 padding: 15px 0;
-            }
-        }
-    }
-}
-.subpage {
-    .sub-head {
-        .sub-head_container.arrows {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            .sub-head_nav {
-                width: 50%;
-                
+                a {
+                    padding: 0 5%;
+                    i {
+                        transition: ease-in-out 0.3s;
+                    }
+                    i:hover {
+                        color: #EEDDE0;
+                        text-shadow: 0 0 30px #63D7EC,
+                            0 0 10px #A1D6E6,
+                            0 0 100px rgb(1, 7, 8),
+                            0 0 500px #67E3F3,
+                    }
+                }
             }
         }
     }
