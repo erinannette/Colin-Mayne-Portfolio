@@ -4,22 +4,6 @@ $dk-green: #223e44;
 $lt-green: #3c7e8a;
 
 // ----- FORM -----
-#contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10% 0;
-    background-color: $bg-grey;
-    .contact-text {
-        text-align: center;
-        width: 70%;
-        padding-bottom: 2%;
-        h3, p {
-            padding-top: 2%;
-        }
-    }
-}
 form {
     width: 70%;
     display: flex;

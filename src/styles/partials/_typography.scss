@@ -42,13 +42,32 @@ h1 {
     font-weight: 600;
     padding: 40px 0 16px 20px;
 }
-.h2-on-black, .h3-on-black {
+.h2-on-black {
     @include title-styles (22);
     color: white;
     font-weight: 600;
 }
-.sub-head_title {
+.h3-on-black {
+    @include title-styles (20);
+    color: white;
+    font-weight: 600;
+}
+h4 {
+    @include title-styles(20);
+    color: $bg-black;
+    &:hover {
+        color: $lt-green;
+    }
+}
+.sub-head_section {
+    padding: 2% 0;
+    color: white;
+    text-shadow: 2px 2px 5px $lt-green;
     letter-spacing: 7px;
+    text-align: center;
+}
+.sub-head_title {
+    letter-spacing: 6px;
     text-align: center;
     padding-top: 5px;
 }
@@ -80,6 +99,19 @@ button {
         color: $dk-green;
         font-weight: 600;
     }
+}
+a {
+    text-decoration: none;
+    color: $dk-green;
+    font-weight: 700;
+}
+i {
+    @include title-styles(25);
+    color: $bg-grey;
+}
+.numbertext {
+    @include title-styles(18);
+    color: white;
 }
 // FORM FONT STYLES
 .full-name, .email, .message {

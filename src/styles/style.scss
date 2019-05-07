@@ -3,6 +3,7 @@
 @import "partials/_typography.scss";
 @import "partials/_menu.scss";
 @import "partials/_contact.scss";
+@import "partials/_subpages.scss";
 @import "partials/_gallery.scss";
 @import "partials/_footer.scss";
 
@@ -178,6 +179,34 @@ body {
         right: 0px;
         content: "";
     }
+}
+
+// --- ABOUT ME - CONTACT ME ---
+#bio, #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+    background-color: $bg-grey;
+    .bio-text, .contact-text {
+        width: 70%;
+        padding-bottom: 2%;
+        h2, p {
+            padding-top: 2%;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+    .bio-text {
+        padding-top: 5%;
+        p { line-height: 30px; }
+    }
+    .contact-text {
+        p { text-align: center; }
+    }
+    form { padding-bottom: 7%; }
 }
 
 // RESPONSIVENESS

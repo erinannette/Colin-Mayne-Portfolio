@@ -23,11 +23,233 @@
                 <h2 class="h2-on-black sub-head_title">
                     Concept Art</h2>
             </div>
-            <div class="sub-head_container">
-                <a href="index.html">
-                    <img class="back" src="src/assets/arrow-left.svg" alt="Back to Home">
 
+            <div class="sub-head_container arrows">
+                <a class="sub-head_nav back" href="index.html">
+                    <div>
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
                 </a>
+                <a class="sub-head_nav forward" href="2-matte-painting.html">
+                    <h4>Matte Painting</h4>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+
+        </div>
+        <h3 class="h3-on-black sub-head_section">Character Design & Props</h3>
+        <div class="gallery character-props">
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/001.jpg" alt="1" />
+                <div class="overlay" onclick="openModal();currentSlide(1)">
+                    <p class="p-on-black">
+                        Placeholder Image #1
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/002.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(2)">
+                    <p class="p-on-black">
+                        Placeholder Image #2</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/003.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(3)">
+                    <p class="p-on-black">
+                        Placeholder Image #3</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/004.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(4)">
+                    <p class="p-on-black">
+                        Placeholder Image #4</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/005.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(5)">
+                    <p class="p-on-black">
+                        Placeholder Image #5</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/006.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(6)">
+                    <p class="p-on-black">
+                        Placeholder Image #6</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="h3-on-black sub-head_section">Environment</h3>
+        <div class="gallery gallery-bottom character-props">
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/045.jpg" alt="1" />
+                <div class="overlay" onclick="openModal();currentSlide(7)">
+                    <p class="p-on-black">
+                        Placeholder Image #7
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/046.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(8)">
+                    <p class="p-on-black">
+                        Placeholder Image #8</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/047.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(9)">
+                    <p class="p-on-black">
+                        Placeholder Image #9</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/048.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(10)">
+                    <p class="p-on-black">
+                        Placeholder Image #10</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/049.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(11)">
+                    <p class="p-on-black">
+                        Placeholder Image #11</p>
+                </div>
+            </div>
+            <div class="gallery-image">
+                <img src="src/assets/03-ILLUSTRATION/050.jpg">
+                <div class="overlay" onclick="openModal();currentSlide(12)">
+                    <p class="p-on-black">
+                        Placeholder Image #12</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL #1 BEGINS -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">
+                &times;</span>
+        
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Character Design & Props</p>
+                        <p>1 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-001.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Character Design & Props</p>
+                        <p>2 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-002.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Character Design & Props</p>
+                        <p>3 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-003.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Character Design & Props</p>
+                        <p>4 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-004.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Character Design & Props</p>
+                        <p>5 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-005.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Character Design & Props</p>
+                        <p>6 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-006.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Environment</p>
+                        <p>1 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-045.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Environment</p>
+                        <p>2 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-046.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Environment</p>
+                        <p>3 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-047.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Environment</p>
+                        <p>4 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-048.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Environment</p>
+                        <p>5 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-049.jpg">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">
+                        <p>Environment</p>
+                        <p>6 / 6</p>
+                    </div>
+                    <img src="src/assets/03-ILLUSTRATION/03-illustration-050.jpg">
+                </div>
+                <!-- MODAL CONTROLS -->
+                <a class="prev" onclick="plusSlides(-1)">
+                    &#10094;
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    &#10095;
+                </a>
+        
+                <!-- CAPTION TEXT -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
             </div>
         </div>
     </section>
@@ -54,9 +276,6 @@
         </div>
     </footer>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script> -->
     <script src="public/app.js"></script>
 </body>
 

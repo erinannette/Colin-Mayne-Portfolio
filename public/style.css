@@ -175,7 +175,7 @@ h1 {
   font-weight: 600;
   padding: 40px 0 16px 20px; }
 
-.h2-on-black, .h3-on-black {
+.h2-on-black {
   font-size: 22px;
   font-size: 2.2rem;
   font-family: "Josefin Sans", sans-serif;
@@ -183,8 +183,32 @@ h1 {
   color: white;
   font-weight: 600; }
 
-.sub-head_title {
+.h3-on-black {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600; }
+
+h4 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: #131313; }
+  h4:hover {
+    color: #3c7e8a; }
+
+.sub-head_section {
+  padding: 2% 0;
+  color: white;
+  text-shadow: 2px 2px 5px #3c7e8a;
   letter-spacing: 7px;
+  text-align: center; }
+
+.sub-head_title {
+  letter-spacing: 6px;
   text-align: center;
   padding-top: 5px; }
 
@@ -232,6 +256,25 @@ button {
     text-transform: lowercase;
     color: #223e44;
     font-weight: 600; }
+
+a {
+  text-decoration: none;
+  color: #223e44;
+  font-weight: 700; }
+
+i {
+  font-size: 25px;
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: #cac2c2; }
+
+.numbertext {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: white; }
 
 .full-name, .email, .message {
   font-size: 15px;
@@ -465,29 +508,6 @@ input:checked {
             transition: all 0.5s;
             border-bottom: 1px solid #516161; }
 
-#contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10% 0;
-  background-color: #cac2c2; }
-  #contact .contact-text {
-    text-align: center;
-    width: 70%;
-    padding-bottom: 2%; }
-    #contact .contact-text h3, #contact .contact-text p {
-      padding-top: 2%; }
-
 form {
   width: 70%;
   display: -webkit-box;
@@ -606,9 +626,21 @@ form {
         border: 1px solid #3c7e8a;
         margin: 15px 0;
         padding: 15px 0; }
-      .subpage .sub-head .sub-head_container .back {
-        width: 20px;
-        padding-bottom: 15px; }
+
+.subpage .sub-head .sub-head_container.arrows {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .subpage .sub-head .sub-head_container.arrows .sub-head_nav {
+    width: 50%; }
 
 .gallery {
   width: 90%;
@@ -991,6 +1023,38 @@ body {
     top: -83px;
     right: 0px;
     content: ""; }
+
+#bio, #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 4%;
+  background-color: #cac2c2; }
+  #bio .bio-text, #bio .contact-text, #contact .bio-text, #contact .contact-text {
+    width: 70%;
+    padding-bottom: 2%; }
+    #bio .bio-text h2, #bio .bio-text p, #bio .contact-text h2, #bio .contact-text p, #contact .bio-text h2, #contact .bio-text p, #contact .contact-text h2, #contact .contact-text p {
+      padding-top: 2%; }
+    #bio .bio-text h2, #bio .contact-text h2, #contact .bio-text h2, #contact .contact-text h2 {
+      text-align: center; }
+  #bio .bio-text, #contact .bio-text {
+    padding-top: 5%; }
+    #bio .bio-text p, #contact .bio-text p {
+      line-height: 30px; }
+  #bio .contact-text p, #contact .contact-text p {
+    text-align: center; }
+  #bio form, #contact form {
+    padding-bottom: 7%; }
 
 @media (max-width: 1080px) {
   .h1-top {
