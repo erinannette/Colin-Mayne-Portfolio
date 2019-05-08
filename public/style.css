@@ -186,10 +186,11 @@ h1 {
 .h3-on-black {
   font-size: 20px;
   font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 600; }
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: #cac2c2;
+  font-weight: 400; }
 
 h4 {
   font-size: 15px;
@@ -202,7 +203,7 @@ h4 {
 
 .sub-head_section {
   padding: 2% 0;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   text-align: center; }
 
 .sub-head_title {
@@ -264,8 +265,7 @@ i {
   font-size: 25px;
   font-size: 2.5rem;
   font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  color: #3c7e8a; }
+  text-transform: uppercase; }
 
 .numbertext {
   font-size: 18px;
@@ -621,6 +621,7 @@ form {
     .subpage .sub-head .sub-head_container {
       width: 100%; }
       .subpage .sub-head .sub-head_container.outline {
+        border: 1px solid #3c7e8a;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -631,18 +632,31 @@ form {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        border: 1px solid #3c7e8a;
         margin: 15px 0;
         padding: 15px 0; }
-        .subpage .sub-head .sub-head_container.outline a {
-          padding: 0 5%; }
-          .subpage .sub-head .sub-head_container.outline a i {
+      .subpage .sub-head .sub-head_container.arrows {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 0 2% 0; }
+        .subpage .sub-head .sub-head_container.arrows a {
+          padding: 0 3%; }
+          .subpage .sub-head .sub-head_container.arrows a i {
+            color: #EEDDE0;
+            text-shadow: 0 0 30px #63D7EC, 0 0 10px #A1D6E6, 0 0 100px #010708, 0 0 500px #67E3F3;
             -webkit-transition: ease-in-out 0.3s;
             -o-transition: ease-in-out 0.3s;
             transition: ease-in-out 0.3s; }
-          .subpage .sub-head .sub-head_container.outline a i:hover {
-            color: #EEDDE0;
-            text-shadow: 0 0 30px #63D7EC, 0 0 10px #A1D6E6, 0 0 100px #010708, 0 0 500px #67E3F3; }
+          .subpage .sub-head .sub-head_container.arrows a i:hover {
+            color: #3c7e8a;
+            text-shadow: none; }
 
 .gallery {
   width: 90%;
@@ -833,11 +847,22 @@ footer {
   footer .fab {
     font-size: 40px;
     color: #223e44;
-    padding-left: 10px; }
+    padding-left: 10px;
+    -webkit-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s; }
+    footer .fab:hover {
+      color: #3c7e8a; }
   footer .fas {
     font-size: 25px;
     color: #223e44;
-    padding-right: 12px; }
+    padding-right: 12px;
+    -webkit-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s; }
+    footer .fas:hover {
+      color: #3c7e8a;
+      text-shadow: 1px 2px 3px #cac2c2; }
 
 @media (max-width: 600px) {
   .footer-wrapper .left, .footer-wrapper .right {

@@ -47,9 +47,9 @@ h1 {
     font-weight: 600;
 }
 .h3-on-black {
-    @include title-styles (20);
-    color: white;
-    font-weight: 600;
+    @include paragraph-styles (20);
+    color:$bg-grey;
+    font-weight: 400;
     // color: #EEDDE0;
         // text-shadow: 0 0 30px #63D7EC,
         //     0 0 10px #A1D6E6,
@@ -63,7 +63,7 @@ h4 {
 }
 .sub-head_section {
     padding: 2% 0;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
     text-align: center;
 }
 .sub-head_title {
@@ -107,7 +107,7 @@ a {
 }
 i {
     @include title-styles(25);
-    color: $lt-green;
+    // color: $lt-green;
 }
 .numbertext {
     @include title-styles(18);
