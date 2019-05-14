@@ -56,6 +56,9 @@ h1 {
         //     0 0 100px rgb(1, 7, 8),
         //     0 0 500px #67E3F3,
 }
+.h3-padding {
+    padding-bottom: 10px;
+}
 h4 {
     @include paragraph-styles(15);
     color: $lt-green;
